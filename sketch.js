@@ -1,16 +1,13 @@
-function setup() {
-	createCanvas(640, 360);
-	textSize(100);
-	textFont('Comic Sans MS');
-	textAlign(CENTER, CENTER);
-	fill('plum');
-}
 function draw() {
-	background(220);
+	background("red");
+	strokeWeight(2);
+	fill("black");
 
-	translate(width/2, height/2);
-	var r = frameCount / 1000 * PI;
-	shearX(r);
+	
+	var x = mouseX;
+	var y = mouseY;
+	line(x, y, 0, 0);
 
-	text('Hello', 0, 0);
+
+	ellipse(x, y,50);
 }
